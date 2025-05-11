@@ -1,6 +1,5 @@
 use getset::{Getters, Setters, MutGetters};
 
-
 #[derive(Default, Getters, Setters, MutGetters)]
 pub struct CharacterStats {
     #[getset(get = "pub", set = "pub")]
@@ -16,7 +15,7 @@ pub struct CharacterStats {
 }
 
 #[derive(Getters,Setters)]
-struct Equipment {
+pub struct Equipment {
     #[getset(get = "pub", set = "pub")]
     name: String,
     #[getset(get = "pub", set = "pub")]
@@ -26,7 +25,7 @@ struct Equipment {
 }
 
 #[derive(Default, Getters, Setters)]
-struct Attributes {
+pub struct Attributes {
     #[getset(get = "pub", set = "pub")]
     strength: i32,
     #[getset(get = "pub", set = "pub")]
