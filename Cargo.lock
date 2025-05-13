@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "TGame"
-version = "0.1.0"
-dependencies = [
- "getset",
-]
-
-[[package]]
 name = "getset"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -70,6 +63,13 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "text_game"
+version = "0.1.0"
+dependencies = [
+ "getset",
 ]
 
 [[package]]
